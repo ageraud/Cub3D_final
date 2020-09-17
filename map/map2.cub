@@ -4,8 +4,8 @@
       
 
     R   1440 900
-     NO textures/dbarbie.xpm
 
+     NO textures/dbarbie.xpm
            SO textures/dreine.xpm
 
  WE  textures/dfleur.xpm
@@ -14,7 +14,7 @@ EA                 textures/dpatrice.xpm
 
 
 
-C     245,140,160
+C     245,140,160 
 
         F         200,100,132
 

@@ -6,7 +6,7 @@
 /*   By: agathe <agathe@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 12:12:49 by agathe            #+#    #+#             */
-/*   Updated: 2020/09/17 19:23:52 by agathe           ###   ########lyon.fr   */
+/*   Updated: 2020/09/17 21:52:07 by agathe           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	ft_parsing_loop(int fd, t_parse *parse, char *line)
 	if (parse->joinmap == NULL)
 	{
 		write(1, "Error\n/!| IMPOSSIBLE TO ACCESS THE MAP /!|\n", 43);
-		write(1, "/!| UNVALID CHAR BEFORE MAP OR NO MAP /!|\n", 48);
+		write(1, "/!| UNVALID CHAR IN PARSING OR NO MAP /!|\n", 42);
 		exit(0);
 	}
 }

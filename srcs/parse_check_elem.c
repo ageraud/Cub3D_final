@@ -6,7 +6,7 @@
 /*   By: agathe <agathe@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 13:27:01 by agathe            #+#    #+#             */
-/*   Updated: 2020/09/17 19:05:39 by agathe           ###   ########lyon.fr   */
+/*   Updated: 2020/09/17 21:49:38 by agathe           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	check_parsing_elements_error(t_parse *parse)
 {
 	if (parse->error_parsing != 8)
 	{
-		write(1, "Error\n/!| UNVALID CHAR IN PARSING ELEMENTS /!|\n", 47);
+		write(1, "Error\n/!| 8 ELEMENTS NEEDED IN PARSING /!|\n", 43);
+		write(1, "/!| MISSING ELEMENT OR UNVALID CHAR /!|\n", 40);
 		exit(0);
 	}
 }
