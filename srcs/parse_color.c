@@ -6,7 +6,7 @@
 /*   By: agathe <agathe@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 13:14:13 by agathe            #+#    #+#             */
-/*   Updated: 2020/09/17 16:29:54 by agathe           ###   ########lyon.fr   */
+/*   Updated: 2020/09/17 18:55:55 by agathe           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void		ft_color_parse_nextbis(char *line, int *color, t_parse *p, int i)
 {
+	if (ft_isdigit(line[i]) == 0)
+	{
+		write(1, "Error\n/!| UNVALID CHAR IN PARSING ELEMENTS /!|\n", 47);
+		exit(0);
+	}
 	p->b = ft_atoi_m(line, &i);
 	if ((p->r < 0 || p->r > 255) || (p->g < 0 || p->g > 255)
 		|| (p->b < 0 || p->b > 255))
@@ -46,7 +51,7 @@ void		ft_color_parse_next(char *line, int *color, t_parse *parse, int i)
 		write(1, "Error\n/!| UNVALID CHAR IN PARSING ELEMENTS /!|\n", 47);
 		exit(0);
 	}
-	if (line[i] == ',')
+	if (ft_isdigit(line[i]) == 0)
 	{
 		write(1, "Error\n/!| UNVALID CHAR IN PARSING ELEMENTS /!|\n", 47);
 		exit(0);

@@ -6,7 +6,7 @@
 /*   By: agathe <agathe@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 13:27:01 by agathe            #+#    #+#             */
-/*   Updated: 2020/09/17 16:50:09 by agathe           ###   ########lyon.fr   */
+/*   Updated: 2020/09/17 19:05:39 by agathe           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	verify_if_global_parse_okay(t_parse *parse)
 	if (parse->resx == -1 || parse->resy == -1 || parse->floor == -1
 		|| parse->ceiling == -1 || parse->no == NULL
 		|| parse->so == NULL || parse->sprite == NULL
-		|| parse->we == NULL || parse->ea == NULL)
+		|| parse->we == NULL)
 	{
 		write(1, "Error\n/!| GLOBAL PARSE ERROR /!|\n", 34);
 		exit(0);

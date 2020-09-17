@@ -6,7 +6,7 @@
 /*   By: agathe <agathe@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 12:12:49 by agathe            #+#    #+#             */
-/*   Updated: 2020/09/17 16:03:53 by agathe           ###   ########lyon.fr   */
+/*   Updated: 2020/09/17 19:23:52 by agathe           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		is_the_start_of_the_map(char *line)
 	contains_a_one = 0;
 	while (line[i] != '\0')
 	{
-		if (line[i] == '0' || line[i] == '1')
+		if (line[i] == '0' || line[i] == '1' || line[i] == '2')
 		{
 			contains_a_one = 1;
 			return (contains_a_one);
@@ -76,5 +76,11 @@ void	ft_parsing_loop(int fd, t_parse *parse, char *line)
 		}
 		isvalid = ft_global_parse(line, parse);
 		free(line);
+	}
+	if (parse->joinmap == NULL)
+	{
+		write(1, "Error\n/!| IMPOSSIBLE TO ACCESS THE MAP /!|\n", 43);
+		write(1, "/!| UNVALID CHAR BEFORE MAP OR NO MAP /!|\n", 48);
+		exit(0);
 	}
 }

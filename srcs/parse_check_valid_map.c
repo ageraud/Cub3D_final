@@ -6,7 +6,7 @@
 /*   By: agathe <agathe@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 13:34:39 by agathe            #+#    #+#             */
-/*   Updated: 2020/09/14 16:54:03 by agathe           ###   ########lyon.fr   */
+/*   Updated: 2020/09/17 19:24:49 by agathe           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void		check_if_only_one_player(int player)
 {
 	if (player != 1)
 	{
-		write(1, "Error\n/!| UNVALID MAP, NOT ONLY ONE PLAYER /!|\n", 47);
+		write(1, "Error\n/!| UNVALID MAP, ONE PLAYER NEEDED /!|\n", 45);
 		exit(0);
 	}
 }
