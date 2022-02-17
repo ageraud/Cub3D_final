@@ -11,6 +11,8 @@ To create the executable with the Makefile: `make`
 
 To lauch the executable: `./Cub3D map/map2.cub` 
 
+To create a .bmp screenshot: `./Cub3D map/map2.cub --save`
+
 
 *__To navigate__*
 
