@@ -7,7 +7,7 @@ We need to create a dynamic view into a maze where we have to find our way.
 
 *__To launch__*
 
-To create the executable with the Makefile: `make`
+To create the `Cub3D` executable with the Makefile: `make`
 
 To lauch the executable: `./Cub3D map/map2.cub` 
 
